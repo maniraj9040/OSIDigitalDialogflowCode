@@ -1,0 +1,99 @@
+
+    * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    body {
+        font-family: "Times New Roman", Times, serif;
+    }
+    #header {
+        background-color: #FFFFFF;
+        text-align:center;
+        height : 50px;
+    }
+    #chat_container {
+         border: 1px solid black;
+         border-radius: 5px;
+        float : right;
+        background-color : #E6E6E6; //#e3f5fc #E6E6E6
+        overflow: hidden;
+        width : 350px;
+        margin: 0px 0px 0px 1000px;
+    }
+    #chat_log {
+        overflow: hidden;
+        padding: 10px;
+        border-bottom: 1px solid black;
+        margin : 10px 10px 10px 10px;
+        overflow-y: scroll;
+        height: 350px;
+        <!--width : 250px;-->
+        font-size: 26px;
+    }
+    #chat_input_container {
+        padding: 10px;
+    }
+    #chat_input {
+        /*padding: 2px;*/
+        font-size: 12px;
+        width: 100%;
+        height : 35px;
+    }
+    .chat_line {
+        overflow: hidden;
+
+        width: 100%;
+        margin: 2px 0 8px 0;
+    }
+
+    .chat-image{
+        float : right;
+        position: -webkit-sticky;
+        position: sticky;
+        cursor : pointer;
+        height : 60px;
+         width: 150px;
+        border-radius : 50%;
+    }
+
+
+    /*.button button5{
+        float: right;
+        border-radius: 50%;
+    }*/
+
+       .chat_triangle, .chat_triangle_user {
+        position: absolute;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        left: -18px;
+        border-width: 0 18px 13px 0;
+        border-color: transparent #ffffff transparent transparent;
+    }
+    .chat_triangle_user {
+        left: auto;
+        right: -18px;
+        border-width: 11px 14px 0 0;
+        border-color: #234b9b transparent transparent transparent;
+    }
+    .chat_bubble, .chat_bubbleuser {
+        position: relative;
+        float: left;
+        background-color: #FFF;
+        margin-top: 10px;
+        line-height: 35px;
+        padding: 0px 7px 0px 7px;
+        margin-left: 20px;
+        font-size: 17px;
+       
+    }
+    .chat_bubbleuser {
+        float: right;
+        margin-left: 0px;
+        margin-right: 20px;
+        background-color: #234b9b;
+        color: #FFF;
+    }
